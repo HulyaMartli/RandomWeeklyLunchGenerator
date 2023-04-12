@@ -6,7 +6,7 @@ public class Runner {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►");
-        System.out.println("◄►◄►◄► WELCOME TO RANDOM WEEKLY LUNCH GENERATOR ◄►◄►◄►");
+        System.out.println("◄►◄►◄► WELCOME TO WEEKLY RANDOM LUNCH GENERATOR ◄►◄►◄►");
         System.out.println("◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►◄►");
         System.out.println("   Please press ENTER to create menus for your week   ");
         sc.nextLine();

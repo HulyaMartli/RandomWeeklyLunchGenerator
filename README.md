@@ -3,7 +3,7 @@ This repository was created to examine Enums and Collections in depth with Java.
 
 ## Console Preview
 
-![Console Preview 1](https://lh3.googleusercontent.com/pw/AJFCJaVfKtJZt3wg-eY6XmBA7wI39XBunmnILqYtZJFYeZ9bYCgS-CCREqlfwBZCyEhBg4_E58e2aFzt0e9PfGwFZ7mo2Rss_4tvrTqtq1KitDu1FFraK4poNiKPI1Fe8v7XnE1-0zHuDz5hRwq8N6RhcC3ntw=w342-h1117-s-no?authuser=0)
+![Console Preview 1](https://lh3.googleusercontent.com/pw/AJFCJaXVX2cUkO7ca2TCPgtvwBCcN90xhCyrOlJ0GUFCHHHbZD_-V9W17jB0T-tTWph3svK0WwbrbTYMzAcYzHeR8dIlHsN3rSAV2Kl18SbcLtf9sXRVM0ZaG_4MP7nue0lp-VnKnDRW-8FWLAz5xJbAy1-ySw=w344-h1116-s-no?authuser=0)
 
 ## Installation
 1. Press the Fork button (top right the page) to save copy of this project on your account.
