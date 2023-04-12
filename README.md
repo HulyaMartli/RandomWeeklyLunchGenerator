@@ -1,4 +1,4 @@
-# Random Weekly Lunch Generator
+# Weekly Random Lunch Generator
 This repository was created to examine Enums and Collections in depth with Java. A basic console random lunch menu creator was formed so the user can create  random menus for each day of the week. No front-end studies have been made in this project. The aim is to study the scope of Enum and Collection structures.
 
 ## Console Preview
