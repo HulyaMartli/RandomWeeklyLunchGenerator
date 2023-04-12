@@ -1,9 +1,6 @@
 package Entities;
 import Enums.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Menu {
     ESoup soup;
@@ -25,7 +22,7 @@ public class Menu {
     }
 
     public ESoup getSoup() {
-        Random rd = new java.util.Random();
+        Random rd = new Random();
         ESoup eSoup;
         eSoup=soups.get(rd.nextInt(soups.size()));
         soups.remove(eSoup);
@@ -33,7 +30,7 @@ public class Menu {
     }
 
     public EDesert getDesert() {
-        Random rd = new java.util.Random();
+        Random rd = new Random();
         EDesert eDesert;
         eDesert=deserts.get(rd.nextInt(deserts.size()));
         deserts.remove(eDesert);
@@ -41,7 +38,7 @@ public class Menu {
     }
 
     public EMeal getMeal() {
-        Random rd = new java.util.Random();
+        Random rd = new Random();
         EMeal eMeal;
         eMeal=meals.get(rd.nextInt(meals.size()));
         meals.remove(eMeal);
@@ -49,14 +46,12 @@ public class Menu {
     }
 
     public EBeverage getBeverage() {
-        Random rd = new java.util.Random();
+        Random rd = new Random();
         EBeverage bev;
         bev=beverages.get(rd.nextInt(beverages.size()));
         beverages.remove(bev);
         return bev;
     }
-
-
 
     @Override
     public String toString() {
