@@ -11,13 +11,12 @@ public class Menu {
     EDesert desert;
     EBeverage beverage;
     EDay day;
-    static List<ESoup> soups= new ArrayList<ESoup>(Arrays.asList(ESoup.values()));
-    static List<EMeal> meals= new ArrayList<EMeal>(Arrays.asList(EMeal.values()));
-    static List<EDesert> deserts= new ArrayList<EDesert>(Arrays.asList(EDesert.values()));
-    static List<EBeverage> beverages= new ArrayList<EBeverage>(Arrays.asList(EBeverage.values()));
+    static List<ESoup> soups= new ArrayList<>(Arrays.asList(ESoup.values()));
+    static List<EMeal> meals= new ArrayList<>(Arrays.asList(EMeal.values()));
+    static List<EDesert> deserts= new ArrayList<>(Arrays.asList(EDesert.values()));
+    static List<EBeverage> beverages= new ArrayList<>(Arrays.asList(EBeverage.values()));
 
     public Menu(EDay day) {
-        Random rd = new java.util.Random();
         this.soup = getSoup();
         this.meal = getMeal();
         this.desert = getDesert();
@@ -61,13 +60,13 @@ public class Menu {
 
     @Override
     public String toString() {
-        return  "         ⌈¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯⌉\n"+
-                "         |  MENU - "+day.getDayName()+"|\n" +
-                "         |  Soup: " + soup.getSoupName() +"|\n" +
-                "         |  Meal: " + meal.getMealName() +"|\n" +
-                "         |  Desert: " + desert.getDesertName() +"|\n" +
-                "         |  Beverage: " + beverage.getBeverageName()+"|\n" +
-                "         ⌊_______________________________⌋\n";
+        return  "          ⌈¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯⌉\n"+
+                "          |  MENU - "+day.getDayName()+"|\n" +
+                "          |  Soup: " + soup.getSoupName() +"|\n" +
+                "          |  Meal: " + meal.getMealName() +"|\n" +
+                "          |  Desert: " + desert.getDesertName() +"|\n" +
+                "          |  Beverage: " + beverage.getBeverageName()+"|\n" +
+                "          ⌊_______________________________⌋\n";
     }
 
 
