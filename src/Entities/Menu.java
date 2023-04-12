@@ -8,49 +8,25 @@ public class Menu {
     EDesert desert;
     EBeverage beverage;
     EDay day;
-    static List<ESoup> soups= new ArrayList<>(Arrays.asList(ESoup.values()));
-    static List<EMeal> meals= new ArrayList<>(Arrays.asList(EMeal.values()));
-    static List<EDesert> deserts= new ArrayList<>(Arrays.asList(EDesert.values()));
-    static List<EBeverage> beverages= new ArrayList<>(Arrays.asList(EBeverage.values()));
+    static List<Enum> soups= new ArrayList<>(Arrays.asList(ESoup.values()));
+    static List<Enum> meals= new ArrayList<>(Arrays.asList(EMeal.values()));
+    static List<Enum> deserts= new ArrayList<>(Arrays.asList(EDesert.values()));
+    static List<Enum> beverages= new ArrayList<>(Arrays.asList(EBeverage.values()));
 
     public Menu(EDay day) {
-        this.soup = getSoup();
-        this.meal = getMeal();
-        this.desert = getDesert();
-        this.beverage = getBeverage();
+        this.soup = (ESoup) getItem(soups);
+        this.meal = (EMeal) getItem(meals);
+        this.desert = (EDesert) getItem(deserts);
+        this.beverage = (EBeverage) getItem(beverages);
         this.day=day;
     }
 
-    public ESoup getSoup() {
+    public Enum getItem(List<Enum> list){
         Random rd = new Random();
-        ESoup eSoup;
-        eSoup=soups.get(rd.nextInt(soups.size()));
-        soups.remove(eSoup);
-        return eSoup;
-    }
-
-    public EDesert getDesert() {
-        Random rd = new Random();
-        EDesert eDesert;
-        eDesert=deserts.get(rd.nextInt(deserts.size()));
-        deserts.remove(eDesert);
-        return eDesert;
-    }
-
-    public EMeal getMeal() {
-        Random rd = new Random();
-        EMeal eMeal;
-        eMeal=meals.get(rd.nextInt(meals.size()));
-        meals.remove(eMeal);
-        return eMeal;
-    }
-
-    public EBeverage getBeverage() {
-        Random rd = new Random();
-        EBeverage bev;
-        bev=beverages.get(rd.nextInt(beverages.size()));
-        beverages.remove(bev);
-        return bev;
+        Enum en;
+        en=list.get(rd.nextInt(list.size()));
+        list.remove(en);
+        return en;
     }
 
     @Override
